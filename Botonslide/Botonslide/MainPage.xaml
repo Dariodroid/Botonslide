@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Botonslide.MainPage"
+             xmlns:local="clr-namespace:Botonslide">
+
+    <StackLayout Margin="40">
+        <local:SlideToActView HeightRequest="50" SlideCompleted="Handle_SlideCompleted">
+            <local:SlideToActView.Thumb>
+                <Frame CornerRadius="50" HasShadow="True" BackgroundColor="Red" Padding="0" BorderColor="Brown">
+                    <Image Source="fldoub.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+                </Frame>
+            </local:SlideToActView.Thumb>
+
+            <local:SlideToActView.TrackBar>
+                <Frame CornerRadius="50" HasShadow="True" BackgroundColor="GreenYellow" Padding="0" BorderColor="Brown">
+                    <Label Text="Desliza hasta el final" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                </Frame>
+            </local:SlideToActView.TrackBar>
+
+            <local:SlideToActView.FillBar>
+                <Frame CornerRadius="50" HasShadow="True" BackgroundColor="Tomato" Padding="0" BorderColor="Brown">
+                    <Image Source="flbackgr.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+                </Frame>
+            </local:SlideToActView.FillBar>
+        </local:SlideToActView>
+    </StackLayout>
+
+</ContentPage>
+
